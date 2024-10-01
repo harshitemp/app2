@@ -8,7 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './my-component.component.css'
 })
 export class MyComponentComponent {
-  message: string = 'Hello from MyComponent!';
-  imageUrl: string = 'assets/angular-logo.png';
-  buttonDisabled: boolean = false;
+  // Interpolation and Property Binding example
+  title = 'One Way Data Binding Example';
+  
+  // Event Binding example
+  count = 0;
+  
+  incrementCount() {
+    this.count++;
+  }
+
+  getTitle() {
+    return this.title;
+  }
 }
